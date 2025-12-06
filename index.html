@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- SEO Title -->
+<title>Ειρήνη | Γιάννης | Ματθαίος</title>
+
+<!-- SEO Description -->
+<meta name="description"
+    content="Σας προσκαλούμε στον γάμο μας! Δείτε το ηλεκτρονικό προσκλητήριο της Ειρήνης & του Γιάννη με όλες τις πληροφορίες για την τελετή και τη δεξίωση στις 23 Μαίου 2026.">
+
+<!-- Keywords (προαιρετικό για Google, αλλά βοηθά άλλες μηχανές) -->
+<meta name="keywords"
+    content="ηλεκτρονικό προσκλητήριο γάμου, προσκλητήριο γάμου, wedding invitation, Ειρήνη και Γιάννης, γάμος 2026">
+
+<!-- Open Graph για Facebook / Messenger / Viber -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ηλεκτρονικό Προσκλητήριο Γάμου – Ειρήνη & Γιάννης">
+<meta property="og:description"
+    content="Δείτε το ηλεκτρονικό μας προσκλητήριο με όλες τις λεπτομέρειες για τον γάμο μας.">
+<meta property="og:image" content="assets/jpg/irini-giannis-mathaios.JPG">
+<meta property="og:url" content="https://yourwebsite.gr">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ηλεκτρονικό Προσκλητήριο Γάμου – Ειρήνη & Γιάννης">
+<meta name="twitter:description" content="Σας προσκαλούμε στον γάμο μας! Δείτε όλες τις πληροφορίες εδώ.">
+<meta name="twitter:image" content="assets/jpg/irini-giannis-mathaios.JPG">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpg" href="favicon.jpg">
+
+<body>
+    <div style="position: relative;">
+        <header class="header">
+            <h1>Ειρήνη, Γιάννης, Ματθαίος </h1>
+            <button id="menu-svg" class="menu-svg">
+                <img style="width: 1.5rem;height:1.5rem;" src="/assets/svg/burger-menu.svg" alt="">
+            </button>
+            <nav class="nav">
+                <ul>
+                    <li><a class="link" href="#profile-image-section">Αρχική</a></li>
+                    <li><a class="link" href="#ceremony">Τελετή</a></li>
+                    <li><a class="link" href="#reception">Δεξίωση</a></li>
+                    <!-- <li><a class="link" href="#family">Οικογένειες</a></li> -->
+                    <li><a class="link" href="#god-father-section">Ο νονός/κουμπάρος</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="sideNav">
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; padding:1rem;border-bottom: 1px solid #364153;">
+                <span style="font-size:1.25rem;font-weight: 700;">Ενότητες</span>
+                <button class="close-area" style="border:none;outline: none;background: transparent;cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+                        <g stroke="#364153" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"
+                            fill="none">
+                            <line x1="16" y1="16" x2="48" y2="48" />
+                            <line x1="48" y1="16" x2="16" y2="48" />
+                        </g>
+                    </svg>
+
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a class="link" href="#profile-image-section">Αρχική</a></li>
+                    <li><a class="link" href="#ceremony">Τελετή</a></li>
+                    <li><a class="link" href="#reception">Δεξίωση</a></li>
+                    <!-- <li><a class="link" href="#family">Οικογένειες</a></li> -->
+                    <li><a class="link" href="#god-father-section">Ο νονός/κουμπάρος</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <body>
+            <div>
+                <div id="profile-image-section" class="profile-image-section">
+                    <div style="display: flex;flex-direction: column;">
+                        <h2 class="title">Ειρήνη | Γιάννης | Ματθαίος</h2>
+                        <p class="date"> 23 Μαίου 2026 | 17:00</p>
+                        <div style="display: flex; justify-content: center; gap:2rem;margin-top:2rem;">
+                            <div class="time">
+                                <span id="days"></span>
+                                <span>μέρες</span>
+                            </div>
+                            <div class="time">
+                                <span id="hours"></span>
+                                <span>ώρες</span>
+                            </div>
+                            <div class="time">
+                                <span id="minutes"></span>
+                                <span>λεπτά</span>
+                            </div>
+                            <div class="time">
+                                <span id="seconds"></span>
+                                <span>δευτ.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ceremony-reception-section">
+                    <h3>Τελετή | Δεξίωση</h3>
+                    <div class="ceremony-reception">
+                        <div id="ceremony" class="ceremony">
+                            <div
+                                style="background-color:#647a8e; border-radius:50%;display: flex;align-items: center; justify-content: center; width:5rem;height:5rem;">
+                                <img style="width:3rem;height:3rem;" src="assets/svg/ceremony.svg" alt="Logo">
+                            </div>
+                            <div style="display: flex; flex-direction:column">
+                                <h2>Τελετή</h2>
+                                <p style="margin-top:0.3rem">23 Μαίου 2026 | 17:00</p>
+                                <p style="margin-top: 1.5rem;">Αγίασμα Τιμίου Προδρόμου Ευκαρπίας</p>
+
+                                <p style="margin-top:0.3rem;">Αγίου Ιωάννου, Ευκαρπία 564 29</p>
+                                <p style="margin-top:0.3rem">231 068 0901</p>
+                                <a target="_blank"
+                                    href="https://www.google.com/maps?hl=el&gl=gr&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x14a837a134efb631:0xa4fdb8e14c09c824"
+                                    class="ceremony-button">Οδηγίες - GPS</a>
+
+                            </div>
+                        </div>
+                        <div id="reception" class="reception">
+                            <div
+                                style="background-color:#647a8e; border-radius:50%;display: flex;align-items: center; justify-content: center; width:5rem;height:5rem;">
+                                <img style="width:3rem;height:3rem;padding-left:0.2rem" src="assets//svg/reception.svg"
+                                    alt="Logo">
+                            </div>
+                            <div style="display: flex; flex-direction:column">
+                                <h2>Δεξίωση</h2>
+                                <p style="margin-top:0.3rem">23 Μαίου 2026 | 19:00</p>
+                                <p style="margin-top: 1.5rem;">Αίθουσα Δεξιώσεων "Filippos Palace"</p>
+                                <p style="margin-top:0.3rem">Καβαλλάρι 572 00</p>
+                                <p style="margin-top:0.3rem">697 323 5350</p>
+                                <a target="_blank"
+                                    href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14a848fe25e3417b:0xf5ab3836d1116d48?sa=X&ved=1t:8290&ictx=111"
+                                    class="reception-button">Οδηγίες - GPS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="god-father-section" class="god-father-section">
+                    <h2 class="god-father-section-title">Ο νονός/κουμπάρος μας</h2>
+                    <img class="img-heart" src="assets/jpg/god-father.JPG" alt="the face of a beautiful girl">
+                    <div class="name">Ηρακλής Θεοφανίδης</div>
+                </div>
+            </div>
+
+
+            <script src="script.js"></script>
+
+        </body>
+    </div>
+</body>
+
+</html>
