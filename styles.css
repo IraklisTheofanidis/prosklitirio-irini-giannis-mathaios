@@ -132,7 +132,7 @@
   }
 
   .profile-image-section {
-    position: relative;
+      position: relative;
       min-height: 70rem;
       background-image: url("./assets/jpg/irini-giannis-mathaios.JPG");
       background-size: cover;
@@ -141,6 +141,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      opacity: 0;
+      animation: fadeInBG 1.5s ease-out forwards;
+  }
+
+  @keyframes fadeInBG {
+      from {
+          opacity: 0;
+      }
+
+      to {
+          opacity: 1;
+      }
   }
 
   .absolute-image-section {
@@ -279,6 +292,35 @@
       font-weight: 500;
   }
 
+  /* parallax ceremony,reception */
+  /* Hidden before animation */
+  .ceremony,
+  .reception,
+  .god-father-section {
+      /* default so it stays still if JS fails */
+      transition: all 1s ease;
+  }
+
+  /* Ceremony: enters from left */
+  .ceremony.animate {
+      transform: translateX(0);
+  }
+
+  .ceremony.init {
+      transform: translateX(-50%);
+      /* start left */
+  }
+
+  /* Reception: enters from right */
+  .reception.animate {
+      transform: translateX(0);
+  }
+
+  .reception.init {
+      transform: translateX(50%);
+      /* start right */
+  }
+
   .god-father-section {
       background-color: #768a9e;
       padding: 10rem 2rem;
@@ -287,6 +329,16 @@
       align-items: center;
       color: #222222;
       gap: 2rem;
+  }
+
+  /* Ceremony: enters from left */
+  .god-father-section.animate {
+      transform: translateY(0);
+  }
+
+  .god-father-section.init {
+      transform: translateY(50%);
+      /* start left */
   }
 
   .god-father-section .title {

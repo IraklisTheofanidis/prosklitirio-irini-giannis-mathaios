@@ -51,4 +51,18 @@ document.addEventListener("DOMContentLoaded", () => {
         link.addEventListener("click", closeMenu);
     });
 
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                entry.target.classList.remove("init");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll(".ceremony, .reception, .god-father-section").forEach(el => {
+        el.classList.add("init");       // starting position
+        observer.observe(el);           // watch each block
+    });
+
 });
