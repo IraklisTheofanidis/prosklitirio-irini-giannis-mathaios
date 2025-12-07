@@ -28,6 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("seconds").textContent = seconds;
     }
 
+    function closeMenu() {
+        document.body.classList.remove("menu-open");
+        sideNav.classList.remove("open");
+    }
+
     updateCountdown();
     timer = setInterval(updateCountdown, 1000);
 
@@ -37,10 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
         sideNav.classList.toggle("open");
     });
 
-    const sideNav = document.getElementById("sideNav");
+    // close-area behavior
     document.querySelector("#sideNav .close-area")
-        .addEventListener("click", () => {
-            document.body.classList.remove("menu-open");
-            sideNav.classList.remove("open");
-        });
+        .addEventListener("click", closeMenu);
+
+    // same behavior for navigation links
+    document.querySelectorAll(".mobile-nav .link").forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
+
 });

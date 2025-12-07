@@ -4,7 +4,7 @@
       font-optical-sizing: auto;
   }
 
-  html{
+  html {
       scroll-behavior: smooth;
   }
 
@@ -176,7 +176,7 @@
 
 
   .ceremony-reception-section {
-      padding: 10rem 2rem;
+      padding: 10rem 1.5rem;
       display: flex;
       flex-direction: column;
       gap: 4rem;
@@ -336,6 +336,14 @@
 
       .menu-svg {
           display: block;
+      }
+
+      .ceremony {
+          gap: 2.5rem;
+      }
+
+      .reception {
+          gap: 2.5rem;
       }
 
   }
