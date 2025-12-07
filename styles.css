@@ -328,6 +328,7 @@
       flex-direction: column;
       align-items: center;
       color: #222222;
+      overflow: hidden;
   }
 
   .god-father-container {
@@ -335,6 +336,7 @@
       flex-direction: column;
       align-items: center;
       gap: 2rem;
+      overflow: hidden;
   }
 
   /* Ceremony: enters from left */
