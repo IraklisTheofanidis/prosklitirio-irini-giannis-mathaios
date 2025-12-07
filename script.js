@@ -51,18 +51,45 @@ document.addEventListener("DOMContentLoaded", () => {
         link.addEventListener("click", closeMenu);
     });
 
-    const observer = new IntersectionObserver(entries => {
+    // ------------------------------
+    // Observer for ceremony + reception
+    // ------------------------------
+    const observerA = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("animate");
                 entry.target.classList.remove("init");
             }
         });
-    }, { threshold: 0.2 });
+    }, {
+        threshold: 0,
+        rootMargin: "0px 0px -100px 0px"
+    });
 
-    document.querySelectorAll(".ceremony, .reception, .god-father-container").forEach(el => {
-        el.classList.add("init");       // starting position
-        observer.observe(el);           // watch each block
+    document.querySelectorAll(".ceremony, .reception").forEach(el => {
+        el.classList.add("init");
+        observerA.observe(el);
+    });
+
+
+    // ------------------------------
+    // Observer for god father container
+    // ------------------------------
+    const observerB = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                entry.target.classList.remove("init");
+            }
+        });
+    }, {
+        threshold: 0,
+        rootMargin: "0px 0px 150px 0px"  // different behavior
+    });
+
+    document.querySelectorAll(".god-father-container").forEach(el => {
+        el.classList.add("init");
+        observerB.observe(el);
     });
 
     document.querySelectorAll('a.link').forEach(link => {

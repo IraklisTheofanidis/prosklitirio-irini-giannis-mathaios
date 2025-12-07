@@ -227,6 +227,7 @@
       display: flex;
       gap: 2rem;
       justify-content: center;
+      width: 100%;
   }
 
   .ceremony {
@@ -387,34 +388,8 @@
   }
 
   @media screen and (max-width: 1050px) {
-      .ceremony-reception {
-          flex-direction: column;
-          justify-content: center;
-          width: 100%;
-      }
-
-      .ceremony {
-          width: 100%;
-      }
-
-      .reception {
-          width: 100%;
-      }
-
-  }
-
-  @media screen and (max-width: 768px) {
-
       h1 {
           font-size: 1rem;
-      }
-
-      .profile-image-section .title {
-          font-size: 1.5rem;
-      }
-
-      .profile-image-section {
-          min-height: 80vh;
       }
 
       .nav {
@@ -425,11 +400,44 @@
           display: block;
       }
 
+
+      .profile-image-section .title {
+          font-size: 1.5rem;
+      }
+
       .ceremony {
+          width: 100%;
           gap: 2.5rem;
       }
 
       .reception {
+          width: 100%;
+
+          gap: 2.5rem;
+      }
+
+  }
+
+  @media screen and (max-width: 768px) {
+      .profile-image-section {
+          min-height: 80vh;
+      }
+
+      .ceremony-reception {
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+      }
+
+
+      .ceremony {
+          width: 100%;
+          gap: 2.5rem;
+      }
+
+      .reception {
+          width: 100%;
+
           gap: 2.5rem;
       }
 
