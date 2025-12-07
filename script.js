@@ -65,4 +65,19 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(el);           // watch each block
     });
 
+    document.querySelectorAll('a.link').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); // stop default jump
+            const targetId = this.getAttribute('href').substring(1);
+            const targetEl = document.getElementById(targetId);
+            const offset = 50;
+            const topPos = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: topPos,
+            });
+        });
+    });
+
+
 });
