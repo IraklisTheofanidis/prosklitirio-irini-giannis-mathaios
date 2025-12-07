@@ -296,7 +296,7 @@
   /* Hidden before animation */
   .ceremony,
   .reception,
-  .god-father-section {
+  .god-father-container {
       /* default so it stays still if JS fails */
       transition: all 1s ease;
   }
@@ -328,15 +328,21 @@
       flex-direction: column;
       align-items: center;
       color: #222222;
+  }
+
+  .god-father-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       gap: 2rem;
   }
 
   /* Ceremony: enters from left */
-  .god-father-section.animate {
+  .god-father-container.animate {
       transform: translateY(0);
   }
 
-  .god-father-section.init {
+  .god-father-container.init {
       transform: translateY(50%);
       /* start left */
   }

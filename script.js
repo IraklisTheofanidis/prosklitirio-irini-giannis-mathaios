@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, { threshold: 0.2 });
 
-    document.querySelectorAll(".ceremony, .reception, .god-father-section").forEach(el => {
+    document.querySelectorAll(".ceremony, .reception, .god-father-container").forEach(el => {
         el.classList.add("init");       // starting position
         observer.observe(el);           // watch each block
     });
