@@ -209,7 +209,7 @@
 
 
   .ceremony-reception-section {
-      padding: 10rem 1.5rem;
+      padding: 12rem 1.5rem;
       display: flex;
       flex-direction: column;
       gap: 4rem;
@@ -299,7 +299,7 @@
   .reception,
   .god-father-container {
       /* default so it stays still if JS fails */
-      transition: all 1s ease;
+      transition: all 0.5s ease;
   }
 
   /* Ceremony: enters from left */
@@ -308,7 +308,7 @@
   }
 
   .ceremony.init {
-      transform: translateX(-50%);
+      transform: translateX(-70%);
       /* start left */
   }
 
@@ -318,7 +318,7 @@
   }
 
   .reception.init {
-      transform: translateX(50%);
+      transform: translateX(70%);
       /* start right */
   }
 
