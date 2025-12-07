@@ -132,6 +132,7 @@
   }
 
   .profile-image-section {
+    position: relative;
       min-height: 70rem;
       background-image: url("./assets/jpg/irini-giannis-mathaios.JPG");
       background-size: cover;
@@ -140,6 +141,25 @@
       display: flex;
       align-items: center;
       justify-content: center;
+  }
+
+  .absolute-image-section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #000;
+      opacity: 0.3;
+      /* z-index: -1; */
+  }
+
+  .profile-image-section .title,
+  .profile-image-section .date,
+  .profile-image-section .time {
+      position: relative;
+      z-index: 1;
+
   }
 
   .profile-image-section .title {
