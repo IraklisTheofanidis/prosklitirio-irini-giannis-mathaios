@@ -304,20 +304,24 @@
 
   /* Ceremony: enters from left */
   .ceremony.animate {
+      opacity: 1;
       transform: translateX(0);
   }
 
   .ceremony.init {
+      opacity: 0;
       transform: translateX(-70%);
       /* start left */
   }
 
   /* Reception: enters from right */
   .reception.animate {
+      opacity: 1;
       transform: translateX(0);
   }
 
   .reception.init {
+      opacity: 0;
       transform: translateX(70%);
       /* start right */
   }
@@ -343,10 +347,12 @@
   /* Ceremony: enters from left */
   .god-father-container.animate {
       transform: translateY(0);
+      opacity: 1;
   }
 
   .god-father-container.init {
       transform: translateY(50%);
+      opacity: 0;
       /* start left */
   }
 
