@@ -231,7 +231,7 @@
   }
 
   .ceremony {
-      padding: 3.5rem 2.5rem 2.5rem;
+      padding: 3.5rem 0rem 2.5rem;
       background-color: transparent;
       display: flex;
       flex-direction: column;
@@ -240,6 +240,11 @@
       border: 1px solid #ddd;
       color: #364153;
       width: 30rem;
+  }
+
+  .ceremony>*:not(iframe) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
   }
 
   .ceremony h2 {
@@ -263,7 +268,7 @@
   }
 
   .reception {
-      padding: 3.5rem 2.5rem 2.5rem;
+      padding: 3.5rem 0rem 2.5rem;
       background-color: #364153;
       gap: 5rem;
       display: flex;
@@ -272,6 +277,11 @@
       border: 1px solid #ddd;
       color: white;
       width: 30rem;
+  }
+
+  .reception>*:not(iframe) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
   }
 
   .reception-button {
