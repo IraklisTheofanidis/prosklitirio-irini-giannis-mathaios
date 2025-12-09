@@ -232,17 +232,17 @@
 
   .ceremony {
       padding: 3.5rem 0rem 2.5rem;
+      gap: 3rem;
       background-color: transparent;
       display: flex;
       flex-direction: column;
-      gap: 5rem;
       border-radius: 0.625rem;
       border: 1px solid #ddd;
       color: #364153;
       width: 30rem;
   }
 
-  .ceremony>*:not(iframe) {
+  .ceremony>* {
       padding-left: 2.5rem;
       padding-right: 2.5rem;
   }
@@ -269,8 +269,8 @@
 
   .reception {
       padding: 3.5rem 0rem 2.5rem;
+      gap: 3rem;
       background-color: #364153;
-      gap: 5rem;
       display: flex;
       flex-direction: column;
       border-radius: 0.625rem;
@@ -279,7 +279,7 @@
       width: 30rem;
   }
 
-  .reception>*:not(iframe) {
+  .reception>* {
       padding-left: 2.5rem;
       padding-right: 2.5rem;
   }
@@ -437,18 +437,28 @@
           flex-direction: column;
           justify-content: center;
           width: 100%;
+          gap: 1.5rem;
       }
 
+      .ceremony>iframe {
+          padding: 0;
+          /* reset iframe padding */
+      }
 
       .ceremony {
+          padding: 2rem 0rem 2rem;
           width: 100%;
-          gap: 2.5rem;
+          gap: 1.5rem;
+      }
+
+      .reception>iframe {
+          padding: 0;
       }
 
       .reception {
           width: 100%;
-
-          gap: 2.5rem;
+          padding: 2rem 0rem 2rem;
+          gap: 1.5rem;
       }
 
   }
