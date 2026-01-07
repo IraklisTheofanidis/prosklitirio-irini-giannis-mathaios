@@ -339,7 +339,7 @@
 
   .save-the-date-section {
       background-color: #5d6975;
-      padding: 5rem 1.5rem;
+      padding: 10rem 1.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -369,7 +369,7 @@
 
   .god-father-section {
       background-color: #5d6975;
-      padding: 5rem 1rem;
+      padding: 10rem 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -398,7 +398,7 @@
   }
 
   .family-section {
-      padding: 5rem 0.5rem;
+      padding: 10rem 0.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
