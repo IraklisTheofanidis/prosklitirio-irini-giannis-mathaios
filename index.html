@@ -43,7 +43,12 @@
         content="https://prosklitirio-irini-giannis-mathaios.vercel.app/assets/jpg/prosklitirio.jpeg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -62,10 +67,11 @@
             <nav class="nav">
                 <ul>
                     <li><a class="link" href="#profile-image-section">Αρχική</a></li>
+                    <li><a class="link" href="#save-the-date-section">Save the date</a></li>
                     <li><a class="link" href="#ceremony">Τελετή</a></li>
                     <li><a class="link" href="#reception">Δεξίωση</a></li>
-                    <!-- <li><a class="link" href="#family">Οικογένειες</a></li> -->
                     <li><a class="link" href="#god-father-section">Ο νονός/κουμπάρος</a></li>
+                    <li><a class="link" href="#family-section">Οικογένειες</a></li>
                 </ul>
             </nav>
         </header>
@@ -88,10 +94,11 @@
             <nav class="mobile-nav">
                 <ul>
                     <li><a class="link" href="#profile-image-section">Αρχική</a></li>
+                    <li><a class="link" href="#save-the-date-section">Save the date</a></li>
                     <li><a class="link" href="#ceremony">Τελετή</a></li>
                     <li><a class="link" href="#reception">Δεξίωση</a></li>
-                    <!-- <li><a class="link" href="#family">Οικογένειες</a></li> -->
                     <li><a class="link" href="#god-father-section">Ο νονός/κουμπάρος</a></li>
+                    <li><a class="link" href="#family-section">Οικογένειες</a></li>
                 </ul>
             </nav>
         </div>
@@ -100,7 +107,7 @@
             <div id="profile-image-section" class="profile-image-section">
                 <div class="absolute-image-section"></div>
                 <div style="display: flex;flex-direction: column;">
-                    <h2 class="title">Γιάννης | Ειρήνη | Ματθαίος</h2>
+                    <h2 class="title stylish-font">Γιάννης | Ειρήνη | Ματθαίος</h2>
                     <p class="date"> 23 Μαίου 2026 | 17:00</p>
                     <div style="display: flex; justify-content: center; gap:2rem;margin-top:2rem;">
                         <div class="time">
@@ -122,12 +129,21 @@
                     </div>
                 </div>
             </div>
+            <div id="save-the-date-section" class="save-the-date-section">
+                <div class="save-the-date-container">
+                    <h2 class="stylish-font">Save the date</h2>
+                    <span style="font-size:1rem;font-weight:300">23 Μαίου 2026 17:00</span>
+                    <span style="font-size:0.875rem;font-weight: 100;text-align: center;">Θα είναι χαρά και τιμή μας να σας έχουμε κοντά μας στην ομορφότερη ημέρα της ζωής μας.
+                    </span>
+                    <img class="img-heart" src="assets/png/save-the-date.png" alt="">
+                </div>
+            </div>
             <div class="ceremony-reception-section">
-                <h3>Τελετή | Δεξίωση</h3>
+                <h3 class="stylish-font">Τελετή | Δεξίωση</h3>
                 <div class="ceremony-reception">
                     <div id="ceremony" class="ceremony">
                         <div
-                            style="background-color:#647a8e; border-radius:50%;display: flex;align-items: center; justify-content: center; width:5rem;height:5rem;">
+                            style="background-color:#5d6975; border-radius:50%;display: flex;align-items: center; justify-content: center; width:5rem;height:5rem;">
                             <img style="width:3rem;height:3rem;" src="assets/svg/ceremony.svg" alt="Logo">
                         </div>
                         <div style="display: flex; flex-direction:column">
@@ -164,9 +180,36 @@
             </div>
             <div id="god-father-section" class="god-father-section">
                 <div class="god-father-container">
-                    <h2 class="god-father-section-title">Ο νονός/κουμπάρος μας</h2>
+                    <h2 class="god-father-section-title stylish-font">Ο νονός/κουμπάρος μας</h2>
                     <img class="img-heart" src="assets/jpg/god-father.JPG" alt="the face of a beautiful girl">
                     <div class="name">Ηρακλής Θεοφανίδης</div>
+                </div>
+            </div>
+            <div id="family-section" class="family-section">
+                <div class="family-container">
+                    <h2 class="save-the-date-section-title stylish-font">Οικογένειες</h2>
+                    <p class="name">
+                        <span>Θα χαρούμε πολύ να είστε κοντά μας
+                            στον γάμο μας<br> και στη βάπτιση του γιού μας.</span>
+                        <!-- <span>Οικογένειες</span> -->
+                    <div style="font-style: italic;">
+                        <div style="display: flex;gap:0.2rem">
+                            <span style="width:65px;">
+                                Λάμπρος
+                            </span>
+                            & Ναταλία Πεχλιβανίδη
+                            <span></span>
+                        </div>
+                        <div style="display: flex;gap:0.2rem">
+                            <span style="width:65px;">
+                                Γιώργος
+                            </span>
+                            & Λιάνα Θεοφανίδη
+                            <span></span>
+                        </div>
+                        <br>
+                    </div>
+                    </p>
                 </div>
             </div>
         </div>

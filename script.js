@@ -87,9 +87,29 @@ document.addEventListener("DOMContentLoaded", () => {
         rootMargin: "0px 0px 150px 0px"  // different behavior
     });
 
-    document.querySelectorAll(".god-father-container").forEach(el => {
+    document.querySelectorAll(".god-father-container, .save-the-date-container").forEach(el => {
         el.classList.add("init");
         observerB.observe(el);
+    });
+
+    // ------------------------------
+    // Observer for family
+    // ------------------------------
+    const observerC = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                entry.target.classList.remove("init");
+            }
+        });
+    }, {
+        threshold: 0,
+        rootMargin: "0px 0px -100px 0px"
+    });
+
+    document.querySelectorAll(".family-container").forEach(el => {
+        el.classList.add("init");
+        observerC.observe(el);
     });
 
     document.querySelectorAll('a.link').forEach(link => {

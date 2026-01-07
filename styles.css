@@ -28,6 +28,12 @@
       margin: 0;
   }
 
+  .stylish-font {
+      font-family: "Libre Bodoni", serif;
+      font-size: 2rem;
+      font-weight: 100;
+  }
+
   .header {
       padding: 10px 20px;
       position: fixed;
@@ -77,7 +83,7 @@
   }
 
   h1 {
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       color: #364153;
   }
 
@@ -178,7 +184,7 @@
   .profile-image-section .title {
       font-size: 3.75rem;
       color: white;
-      font-weight: 700;
+      font-weight: 200;
   }
 
   .profile-image-section .date {
@@ -186,7 +192,7 @@
       color: white;
       margin-top: 0.5rem;
       text-align: center;
-      font-weight: 500;
+      font-weight: 200;
   }
 
   .profile-image-section .time {
@@ -200,11 +206,12 @@
 
   .profile-image-section .time span:first-child {
       font-size: 2.5rem;
-      font-weight: 500;
+      font-weight: 200;
   }
 
   .profile-image-section .time span:nth-child(2) {
       font-size: 1rem;
+      font-weight: 200;
   }
 
 
@@ -250,7 +257,7 @@
   .ceremony-button {
       text-decoration: none;
       color: white;
-      background-color: #364153;
+      background-color: #5d6975;
       border-radius: 0.325rem;
       cursor: pointer;
       font-size: 1rem;
@@ -264,7 +271,7 @@
 
   .reception {
       padding: 3.5rem 2.5rem 2.5rem;
-      background-color: #364153;
+      background-color: #5d6975;
       gap: 5rem;
       display: flex;
       flex-direction: column;
@@ -298,7 +305,10 @@
   /* Hidden before animation */
   .ceremony,
   .reception,
-  .god-father-container {
+  .god-father-container ,
+  .save-the-date-container,
+  .family-container
+  {
       /* default so it stays still if JS fails */
       transition: all 0.5s ease;
   }
@@ -327,13 +337,43 @@
       /* start right */
   }
 
-  .god-father-section {
-      background-color: #768a9e;
+  .save-the-date-section {
+      background-color: #5d6975;
       padding: 10rem 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: #222222;
+      color: white;
+      overflow: hidden;
+  }
+
+  .save-the-date-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      overflow: hidden;
+  }
+
+  /* Ceremony: enters from left */
+  .save-the-date-container.animate {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  .save-the-date-container.init {
+      transform: translateY(50%);
+      opacity: 0;
+      /* start left */
+  }
+
+  .god-father-section {
+      background-color: #5d6975;
+      padding: 10rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
       overflow: hidden;
   }
 
@@ -357,8 +397,44 @@
       /* start left */
   }
 
-  .god-father-section .title {
-      font-size: 2rem;
+  .family-section {
+      padding: 10rem 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #222222;
+      overflow: hidden;
+  }
+
+
+  .family-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      overflow: hidden;
+  }
+
+  /* family: enters from left */
+  .family-container.animate {
+      opacity: 1;
+      transform: translateX(0);
+  }
+
+  .family-container.init {
+      opacity: 0;
+      transform: translateX(-70%);
+      /* start left */
+  }
+
+  .family-section p {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 300;
   }
 
   .img-heart {
