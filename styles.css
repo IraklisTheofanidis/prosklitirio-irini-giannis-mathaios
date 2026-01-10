@@ -140,13 +140,14 @@
   .profile-image-section {
       position: relative;
       min-height: 70rem;
-      background-image: url("./assets/jpg/irini-giannis-mathaios2.jpeg");
+      background-image: url("./assets/png/giannis-irini-mathaios.PNG");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
+      padding-bottom: 2rem;
 
       opacity: 0;
       animation: fadeInBG 1.5s ease-out forwards;
@@ -305,10 +306,9 @@
   /* Hidden before animation */
   .ceremony,
   .reception,
-  .god-father-container ,
+  .god-father-container,
   .save-the-date-container,
-  .family-container
-  {
+  .family-container {
       /* default so it stays still if JS fails */
       transition: all 0.5s ease;
   }
@@ -339,7 +339,7 @@
 
   .save-the-date-section {
       background-color: #6d7175c2;
-      padding: 10rem 1.5rem;
+      padding: 7rem 1.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -369,7 +369,7 @@
 
   .god-father-section {
       background-color: #6d7175c2;
-      padding: 10rem 1rem;
+      padding: 7rem 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -398,7 +398,7 @@
   }
 
   .family-section {
-      padding: 10rem 0.5rem;
+      padding: 7rem 0.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -496,7 +496,7 @@
 
   @media screen and (max-width: 768px) {
       .profile-image-section {
-          min-height: 80vh;
+          min-height: 60vh;
       }
 
       .ceremony-reception {
