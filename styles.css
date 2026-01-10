@@ -258,7 +258,7 @@
   .ceremony-button {
       text-decoration: none;
       color: white;
-      background-color: #6d7175c2;
+      background-color: #5e6e4b;
       border-radius: 0.325rem;
       cursor: pointer;
       font-size: 1rem;
@@ -272,7 +272,7 @@
 
   .reception {
       padding: 3.5rem 2.5rem 2.5rem;
-      background-color: #6d7175c2;
+      background-color: #5e6e4b;
       gap: 5rem;
       display: flex;
       flex-direction: column;
@@ -338,7 +338,7 @@
   }
 
   .save-the-date-section {
-      background-color: #6d7175c2;
+      background-color: #5e6e4b;
       padding: 7rem 1.5rem;
       display: flex;
       flex-direction: column;
@@ -368,7 +368,7 @@
   }
 
   .god-father-section {
-      background-color: #6d7175c2;
+      background-color: #5e6e4b;
       padding: 7rem 1rem;
       display: flex;
       flex-direction: column;
@@ -518,3 +518,4 @@
       }
 
   }
+  
