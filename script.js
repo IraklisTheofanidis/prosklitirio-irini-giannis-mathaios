@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // ------------------------------
-    // Observer for god father container
+    // Observer for god father and save the date container
     // ------------------------------
     const observerB = new IntersectionObserver(entries => {
         entries.forEach(entry => {
