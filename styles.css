@@ -14,6 +14,7 @@
       border: 0 solid;
       margin: 0;
       padding: 0;
+      color: #5e6e4b
   }
 
   h1,
@@ -75,7 +76,7 @@
       display: flex;
       flex-direction: column;
       z-index: 999;
-      color: #364153;
+      color: #5e6e4b;
   }
 
   #sideNav.open {
@@ -84,7 +85,7 @@
 
   h1 {
       font-size: 1.125rem;
-      color: #364153;
+       color:#5e6e4b;
   }
 
   .mobile-nav ul {
@@ -105,7 +106,7 @@
       text-decoration: none;
       font-size: 1.125rem;
       font-weight: 400;
-      color: #364153;
+      color:#5e6e4b;
   }
 
   .nav {
@@ -130,7 +131,7 @@
       text-decoration: none;
       font-size: 1.125rem;
       font-weight: 500;
-      color: #364153;
+      color:#5e6e4b;
   }
 
   .nav .link:hover {
@@ -517,4 +518,3 @@
       }
 
   }
-  
