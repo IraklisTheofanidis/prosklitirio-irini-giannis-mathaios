@@ -141,7 +141,7 @@
   .profile-image-section {
       position: relative;
       min-height: 70rem;
-      background-image: url("./assets/png/giannis-irini-mathaios.png");
+      background-image: url("./assets/png/giannis-irini-mathaios.PNG");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
